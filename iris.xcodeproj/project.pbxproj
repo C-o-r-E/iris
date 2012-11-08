@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		04CB681A164778FE0093F58C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 04CB6819164778FE0093F58C /* main.c */; };
 		04CB681C164778FE0093F58C /* iris.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 04CB681B164778FE0093F58C /* iris.1 */; };
+		04CB6823164782150093F58C /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CB6822164782150093F58C /* ApplicationServices.framework */; };
+		04CB68251647859C0093F58C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CB68241647859C0093F58C /* OpenGL.framework */; };
+		04CB6827164785AA0093F58C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CB6826164785AA0093F58C /* CoreFoundation.framework */; };
+		04CB6829164875C30093F58C /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CB6828164875C30093F58C /* CoreVideo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +32,10 @@
 		04CB6815164778FE0093F58C /* iris */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = iris; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CB6819164778FE0093F58C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		04CB681B164778FE0093F58C /* iris.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = iris.1; sourceTree = "<group>"; };
+		04CB6822164782150093F58C /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		04CB68241647859C0093F58C /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		04CB6826164785AA0093F58C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		04CB6828164875C30093F58C /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CB6829164875C30093F58C /* CoreVideo.framework in Frameworks */,
+				04CB6827164785AA0093F58C /* CoreFoundation.framework in Frameworks */,
+				04CB68251647859C0093F58C /* OpenGL.framework in Frameworks */,
+				04CB6823164782150093F58C /* ApplicationServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +56,10 @@
 		04CB680A164778FE0093F58C = {
 			isa = PBXGroup;
 			children = (
+				04CB6828164875C30093F58C /* CoreVideo.framework */,
+				04CB6826164785AA0093F58C /* CoreFoundation.framework */,
+				04CB68241647859C0093F58C /* OpenGL.framework */,
+				04CB6822164782150093F58C /* ApplicationServices.framework */,
 				04CB6818164778FE0093F58C /* iris */,
 				04CB6816164778FE0093F58C /* Products */,
 			);
@@ -178,6 +194,7 @@
 		04CB6820164778FE0093F58C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LINKER_DISPLAYS_MANGLED_NAMES = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -185,6 +202,7 @@
 		04CB6821164778FE0093F58C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LINKER_DISPLAYS_MANGLED_NAMES = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
